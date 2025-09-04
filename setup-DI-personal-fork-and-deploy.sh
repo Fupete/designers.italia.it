@@ -1,5 +1,6 @@
 #!/bin/bash
 # setup-DI-personal-fork-and-deploy.sh
+# Gist: https://gist.github.com/Fupete/3a1c64c2745fecfa83959ae17dcef07b
 # Name: 'Setup designers.italia.it personal fork GitHub Pages Deploy'
 # Description: 'Automatically configure your fork of designers.italia.it for GitHub Pages deployment' 
 # Author: 'Fupete'
