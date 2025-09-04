@@ -44,10 +44,14 @@ jobs:
           SHARP_CONCURRENCY=2 \
           GATSBY_CONCURRENT_DOWNLOAD=5 \
           npm run build
+        env:
+          MATOMO_SITE_ID: ${{ secrets.MATOMO_SITE_ID }}
+          MATOMO_SITE_URL: ${{ secrets.MATOMO_SITE_URL }}
           
       - name: Deploy
         run: |
-          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/fupete/designers.italia.it
+          git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/italia/designers.italia.it
+          echo designers.italia.it > public/CNAME
           npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

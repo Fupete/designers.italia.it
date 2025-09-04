@@ -30,7 +30,7 @@ metadata:
 seo:
   name: "Progettare servizi pubblici virtuosi" #C REMIND "- Designers Italia" #AUTO
   description: "Insegna i princìpi per progettare servizi pubblici equi e rispettosi delle persone e dell’ambiente." #C
-  # image: https://designers.italia.it/images/risorse-per-progettare/social/kit_analisiContesto.png #I
+  # image: https://fupete.github.io/designers.italia.it/images/risorse-per-progettare/social/kit_analisiContesto.png #I
   canonical: null
   pathname: /formazione/insegnare/progettare-servizi-pubblici-virtuosi/ #M
 

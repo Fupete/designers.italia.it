@@ -169,7 +169,7 @@ function ComponentView({
     },
   );
 
-  const BSIExampleUrl = `/examples/${source}/${slugify(
+  const BSIExampleUrl = `/designers.italia.it/examples/${source}/${slugify(
     variantName,
   ).toLowerCase()}.html`;
 

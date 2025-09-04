@@ -27,7 +27,7 @@ function Icon({
       aria-hidden={hidden}
       aria-label={ariaLabel}
     >
-      <use href={`/svg/${icon}`} />
+      <use href={`/designers.italia.it/svg/${icon}`} />
     </svg>
   );
 }

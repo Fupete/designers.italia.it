@@ -6,12 +6,12 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fupete/designers.italia.it.git"
+    "url": "git+https://github.com/italia/designers.italia.it.git"
   },
   "bugs": {
-    "url": "https://github.com/fupete/designers.italia.it/issues"
+    "url": "https://github.com/italia/designers.italia.it/issues"
   },
-  "homepage": "https://fupete.github.io/designers.italia.it/",
+  "homepage": "https://designers.italia.it/",
   "keywords": [
     "designers",
     "community",
@@ -32,7 +32,7 @@
     "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gh-pages -u 'GitHub <fupete@users.noreply.github.com>' -d public"
+    "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public"
   },
   "dependencies": {
     "@colliercz/gatsby-transformer-gitinfo": "github:CollierCZ/gatsby-transformer-gitinfo",

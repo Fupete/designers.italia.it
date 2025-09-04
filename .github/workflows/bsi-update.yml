@@ -2,7 +2,7 @@ name: Content and dependencies update
 
 on:
   schedule:
-    - cron:  '4 10 * * *'
+    - cron:  '4 10 * * 1'
 
   workflow_dispatch:
 
@@ -30,4 +30,4 @@ jobs:
           title: "chore(deps): update bootstrap italia and content"
           commit-message: "chore(deps): update bootstrap italia and content"
           branch: feature/update-assets
-          token: ${{ secrets.DEVELOPERS_ITALIA_DROID_GITHUB_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
