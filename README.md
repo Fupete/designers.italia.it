@@ -18,8 +18,8 @@ Commenti e proposte relative all'evoluzione del sito e delle risorse possono ess
 
 Per i collaboratori del progetto sono disponibili guide dettagliate:
 
-- **[HOW-TO-EDITORIAL.MD](HOW-TO-EDITORIAL.MD)** - Guida per la creazione e gestione dei contenuti editoriali (notizie, eventi, media) e del controllo delle card in evidenza nelle diverse sezioni del sito.
-- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](HOW-TO-DESIGN-SYSTEM-RELEASE.MD)** - Procedura per i rilasci del Design system del Paese.
+- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.md](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-MANAGE-EDITORIAL-CONTENT.md)** - Guida per la creazione e gestione dei contenuti editoriali (notizie, eventi, media) e del controllo delle card in evidenza nelle diverse sezioni del sito.
+- **[HOW-TO-DESIGN-SYSTEM-RELEASE.md](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-RELEASE-DESIGN-SYSTEM.md)** - Procedura per i rilasci del Design system del Paese.
 
 ### ✏️ Contenuti
 
@@ -79,7 +79,7 @@ npm run prettier:fix
 
    - **Aggiornamento Bootstrap Italia**: L'azione `bsi-update` aggiorna automaticamente Bootstrap Italia e rigenera le anteprime dei componenti nelle schede del Design system (giornaliera o manuale).
 
-   - **Deploy produzione**: lanciare in sequenza (a) `prepare-deploy` (se ci sono nuove immagini, meno di 5 min, per generatore card SEO) e (b) `deploy` (30min ca., sito su https://designers.italia.it).
+   - **Deploy produzione**: lanciare in sequenza (a) `prepare-deploy` (se ci sono nuove immagini, meno di 5 min, per generatore card SEO) e (b) `deploy` (5-30min, usa cache Gatsby, sito su https://designers.italia.it).
 
 7. **Ulteriori informazioni su Gatsby (in Inglese)**
 

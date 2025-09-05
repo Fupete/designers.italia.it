@@ -18,8 +18,8 @@ Comments and proposals regarding the evolution of the site and resources can be 
 
 Detailed guides are available for project contributors *(Italian language only)*:
 
-- **[HOW-TO-EDITORIAL.MD](HOW-TO-EDITORIAL.MD)** - Guide for creating and managing editorial content (news, events, media)
-- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](HOW-TO-DESIGN-SYSTEM-RELEASE.MD)** - Procedure for design system releases
+- **[HOW-TO-MANAGE-EDITORIAL-CONTENT.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-MANAGE-EDITORIAL-CONTENT.md)** - Guide for creating and managing editorial content (news, events, media)
+- **[HOW-TO-DESIGN-SYSTEM-RELEASE.MD](https://github.com/italia/designers.italia.it/blob/main/HOW-TO-RELEASE-DESIGN-SYSTEM.md)** - Procedure for design system releases
 
 ### ✏️ Content
 
@@ -79,7 +79,7 @@ npm run prettier:fix
 
    - **Bootstrap Italia updates**: The `bsi-update` action automatically updates Bootstrap Italia and regenerates component previews in Design system pages (daily or manual).
 
-   - **Production deploy**: run sequentially (a) `prepare-deploy` (if new images, <5 min, for SEO card generator) and (b) `deploy` (~30min, site to https://designers.italia.it).
+   - **Production deploy**: run sequentially (a) `prepare-deploy` (if new images, <5 min, for SEO card generator) and (b) `deploy` (5–30min, using Gatsby cache, site to https://designers.italia.it).
 
 7. **Learn more about Gatsby**
 
