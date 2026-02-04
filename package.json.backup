@@ -6,12 +6,12 @@
   "license": "BSD-3-Clause",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/italia/designers.italia.it.git"
+    "url": "git+https://github.com/fupete/designers.italia.it.git"
   },
   "bugs": {
-    "url": "https://github.com/italia/designers.italia.it/issues"
+    "url": "https://github.com/fupete/designers.italia.it/issues"
   },
-  "homepage": "https://designers.italia.it/",
+  "homepage": "https://fupete.github.io/designers.italia.it/",
   "keywords": [
     "designers",
     "community",
@@ -30,22 +30,24 @@
     "prettier:fix": "npm run prettier -- --write",
     "build:dev": "npm run clean && npm run prepare-lib && GATSBY_BUILD=dev gatsby build --prefix-paths",
     "build": "npm run clean && npm run prepare-lib && gatsby build --prefix-paths",
+    "build:ci": "npm run prepare-lib && gatsby build --prefix-paths",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gh-pages -u 'Deploy Bot <no-reply@teamdigitale.governo.it>' -d public"
+    "deploy": "gh-pages -u 'GitHub <fupete@users.noreply.github.com>' -d public"
   },
   "dependencies": {
     "@colliercz/gatsby-transformer-gitinfo": "github:CollierCZ/gatsby-transformer-gitinfo",
     "@loadable/component": "^5.16.4",
     "adm-zip": "^0.5.10",
     "babel-preset-gatsby": "^3.9.0",
-    "bootstrap-italia": "^2.16.0",
+    "bootstrap-italia": "^2.17.3",
     "classnames": "^2.3.2",
     "dotenv": "^16.1.4",
-    "express": "^4.21.2",
+    "express": "^4.22.1",
     "fs-extra": "^11.1.0",
     "gatsby": "^5.15.0",
     "gatsby-plugin-breadcrumb": "^12.3.2",
+    "gatsby-plugin-eslint": "^4.0.4",
     "gatsby-plugin-htaccess": "^1.4.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-local-search": "^2.0.1",
@@ -57,10 +59,10 @@
     "gatsby-source-filesystem": "^5.7.0",
     "gatsby-transformer-sharp": "^5.7.0",
     "gatsby-transformer-yaml": "^5.7.0",
-    "gatsby-plugin-eslint": "^4.0.4",
-    "glob": "^10.3.3",
+    "gh-pages": "^6.0.0",
+    "glob": "^10.5.0",
     "html-react-parser": "^4.2.2",
-    "js-yaml": "^4.1.0",
+    "js-yaml": "^4.1.1",
     "lmdb": "^2.9.2",
     "mustache": "^4.2.0",
     "prismjs": "^1.30.0",
@@ -69,14 +71,13 @@
     "react-dom": "^18.2.0",
     "react-markdown": "^8.0.3",
     "react-use-flexsearch": "^0.1.1",
+    "recursive-copy-cli": "^1.0.20",
     "remark-gfm": "^3.0.1",
     "sanitize-html": "^2.12.1",
     "sass": "^1.81.0",
     "slugify": "^1.6.5",
     "superagent": "^8.0.9",
-    "uuid": "^9.0.0",
-    "recursive-copy-cli": "^1.0.20",
-    "gh-pages": "^6.0.0"
+    "uuid": "^9.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.21.5",

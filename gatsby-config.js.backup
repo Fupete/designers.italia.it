@@ -293,7 +293,7 @@ const GATSBY_PLUGINS = [
       // required.
       query: `
       {
-        allContent {
+        allContent(filter: { metadata: { unpublished: { ne: true } } }) {
           edges {
             node {
               id
@@ -433,7 +433,7 @@ if (process.env.GATSBY_BUILD !== "dev") {
 module.exports = {
   trailingSlash: "always",
   siteMetadata: {
-    siteUrl: `https://designers.italia.it`,
+    siteUrl: `https://fupete.github.io/designers.italia.it`,
     title: "Designers Italia",
     author: "Dipartimento per la trasformazione digitale e AGID",
     lang: "it",
@@ -446,7 +446,7 @@ module.exports = {
     themeColor: "#0066cc",
   },
   plugins: GATSBY_PLUGINS,
-  pathPrefix: "/",
+  pathPrefix: "/designers.italia.it",
   flags: {
     DEV_SSR: true,
   },
