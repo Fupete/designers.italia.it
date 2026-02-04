@@ -18,23 +18,25 @@ highlightedCards:
 
     - section: "highlights-home"
       cards:
+
+        - title: "Concludi la riprogettazione di un sito con il nuovo kit dedicato alla migrazione"
+          cta: "Scopri il kit"
+          text: "Nuovi strumenti per completare il passaggio da un vecchio sito a uno nuovo e pubblicarlo in modo corretto e ordinato. "
+          
         - title: "Progettare un assistente virtuale: un atto di design pubblico"
           cta: "Scopri le novità"
           text: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un'intelligenza artificiale conversazionale"
 
-        - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
-          cta: "Esplora i fondamenti"
-          text: "Aggiornati e integrati con un nuovo fondamento le indicazioni del design system per progettare contenuti efficaci e accessibili"
+        - title: "Ora tocca a voi! Le nuove iniziative per la community"
+          cta: "Esplora la sezione"
+          text: "Online la nuova sezione del sito dedicata a coinvolgere cittadinanza, PA e fornitori"
         
-        - title: "Passi avanti per i kit di design e sviluppo di .italia"
-          cta: "Scopri i dettagli"
-          text: "Il miglioramento del design system del Paese continua"
 
     - section: "notizie-home"
       cards:
           - title: "Passi avanti per i kit di design e sviluppo di .italia"
-          - title: "Nuovi strumenti per progettare architetture dell’informazione efficaci e intuitive"
-          - title: "Definisci la direzione progettuale di un sito o servizio con il nuovo kit ‘Stato dell’arte’"
+          - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
+          - title: "Scopri le novità del Manuale operativo di design"
 
   ################################
   # /community/ 
@@ -43,26 +45,35 @@ highlightedCards:
     sections:
     - section: "notizie"
       cards:
+        - title: "Concludi la riprogettazione di un sito con il nuovo kit dedicato alla migrazione"
         - title: "Progettare un assistente virtuale: un atto di design pubblico"
         - title: "Ora tocca a voi! Le nuove iniziative per la community"
-        - title: "Passi avanti per i kit di design e sviluppo di .italia"
 
     - section: "eventi"
       cards:
+        - title: "Community call: progettare bene con il design system .italia"
+        - title: "Milano Digital Week 2025: progettare assistenti virtuali nei servizi pubblici"
         - title: "Community lab di Developers Italia"
         - title: "Community call: i musei presentano i loro nuovi siti"
-        - title: "Community call: le Aziende sanitarie locali presentano i loro nuovi siti"
-        - title: "Accessibility Days 2025 – Accessibilità by design"
+        
+        
 
     - section: "media"
       cards:
+        - title: "Community call: progettare bene con il design system .italia"
         - title: "Community call: i musei presentano i loro nuovi siti"
         - title: "Community call: le ASL presentano i loro nuovi siti"
         - title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
-        - title: "Progettare l'interazione con le IA conversazionali"
 
     - section: "articoli-di-approfondimento"
       cards:
+        - title: "Accessibilità digitale: testing collaborativo, rilasci rapidi e comunicazione aperta"
+          img: "/images/community/articoli-di-approfondimento/202510-webaccessibile.png"
+          alt: ""
+          url: "https://medium.com/designers-italia/accessibilita-digitale-testing-collaborativo-rilasci-rapidi-e-comunicazione-aperta-7d1ab26fa704"
+          moreInfo: "di Daniele Tabellini"
+          tags: ["Design system", "Interfaccia utente", "Accessibilità"]
+          
         - title: "Verso Design system .italia: la versione 1 segna un traguardo per l'accessibilità nella PA"
           img: "/images/community/articoli-di-approfondimento/20250122-verso-design-system-italia-la-versione-1-segna-un-traguardo-per-l-accessibilita-integrata-della-pa.png"
           alt: ""
@@ -76,13 +87,6 @@ highlightedCards:
           url: "https://medium.com/designers-italia/verso-design-system-italia-dalle-origini-al-design-system-aperto-del-paese-66a2d5af6654"
           moreInfo: "di Daniele Tabellini"
           tags: ["Design system", "Interfaccia utente", "Accessibilità"]
-
-        - title: "Verso Design system .italia: come è nato il nome del design system del Paese"
-          img: "/images/community/articoli-di-approfondimento/20240411-verso-design-system-italia-come-e-nato-il-nome-del-design-system-del-paese.png"
-          alt: ""
-          url: "https://medium.com/designers-italia/verso-design-system-italia-come-%C3%A8-nato-il-nome-del-design-system-del-paese-a2720e219f00"
-          moreInfo: "di Gabriella Poggioli"
-          tags: ["Design system"]
 
   ################################
   # /design-system/ 

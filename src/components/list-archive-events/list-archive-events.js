@@ -82,6 +82,14 @@ function ListArchiveEvents({ background, noSpace }) {
                     const { pathname } = node.seo;
                     const title = node.components?.hero?.title;
                     const { description } = node.seo;
+
+                    const date =
+                      node.components?.hero?.kangaroo?.eventInfo?.items?.find(
+                        (item) =>
+                          item.title === "Data e orario" ||
+                          item.title === "Data",
+                      );
+
                     return (
                       <ListItem
                         url={pathname}
@@ -90,7 +98,7 @@ function ListArchiveEvents({ background, noSpace }) {
                         icon={iconOpt}
                         addonClasses="align-items-start border-bottom-0 pt-3 px-0 px-sm-2 px-md-4"
                       >
-                        <div className="d-md-flex">
+                        <div className="d-md-flex align-items-center">
                           <h3 className="h6 mb-0">
                             <strong>{title}</strong>
                           </h3>
@@ -99,7 +107,7 @@ function ListArchiveEvents({ background, noSpace }) {
                               <div className="mb-2 mt-1 mb-md-0 mt-md-0">
                                 <Tag
                                   label={node.components?.hero?.tag?.label}
-                                  addonClasses="ms-md-4 text-uppercase px-2 py-0 fw-normal"
+                                  addonClasses="ms-md-2 px-2 py-0"
                                 />
                               </div>
                             )}
@@ -115,19 +123,9 @@ function ListArchiveEvents({ background, noSpace }) {
                             ) : null}
                           </div>
                         </div>
-                        {(node.components?.hero?.kangaroo?.eventInfo?.items ||
-                          description) && (
+                        {(date || description) && (
                           <p className="text-secondary fw-normal d-block mb-3 listTextSmall">
-                            {node.components?.hero?.kangaroo?.eventInfo
-                              ?.items && (
-                              <span>
-                                {
-                                  node.components?.hero?.kangaroo?.eventInfo
-                                    ?.items[1].label
-                                }
-                              </span>
-                            )}{" "}
-                            {/* // XXX WE NEED AN UNIVERSAL NEWS DATE FIELD */}
+                            {date && <span>{date.label}</span>}{" "}
                             <span> — {description}</span>
                           </p>
                         )}

@@ -96,7 +96,7 @@ Ogni contenuto viene gestito tramite file **YAML** e caricato con una **Pull Req
    - Caricate immagini hero e seo
    - Verificati link e metadati SEO
    ```
-5. **Apri la PR** verso `main`  
+5. **Apri la PR** verso `main`, se possibile usa il template PR dedicato aggiungendo all'url `?expand=1&template=editorial-content.md` 
 6. **Controlla l’anteprima Vercel** collegata alla PR su GitHub (alcuni minuti per generarla, fai attenzione se ci fossero errori di build)
 7. **Controlla i test automatici** associati alla PR
 8. **Marca la PR come "draft"** finché ci lavori
@@ -150,6 +150,49 @@ Nota bene: **crea la PR almeno una settimana/dieci giorni prima della data di pu
 - ❌ Link esterni non marcati con `it-external-link` e nota “(si apre in una nuova finestra)”  
 - ❌ Uso di heading saltati (H2 → H4 senza H3)  
 - ❌ File YAML con indentazione errata (attenzione a usare spazi coerenti e non tab)
+
+---
+
+## Rimuovere un media dalla pubblicazione (Unpublish)
+
+Se un video o podcast non deve più essere visibile negli archivi e nella ricerca, ma vuoi mantenerlo accessibile tramite link diretto, usa la funzionalità **unpublish**.
+
+### Procedura
+
+1. **Sposta il file** nella sottocartella `unpublished`:
+```
+   Da: /src/data/content/community/media/YYYYMMDD-titolo.yaml
+   A:   /src/data/content/community/media/unpublished/YYYYMMDD-titolo.yaml
+```
+
+2. **Modifica il file YAML della scheda** aggiungendo la proprietà `unpublished: true` ai `metadata`:
+```yaml
+   metadata:
+     unpublished: true
+```
+puoi anche correggere il `pathname` nei `seo` se desideri avere un breadcrumb pulito aggiungendo la cartella `unpublished` al percorso così: 
+```yaml
+   seo:
+     pathname: /community/media/unpublished/YYYYMMDD-titolo/
+```
+
+3. **Modificha il file YAML dell'indice** aggiungento il redirect corretto:
+```yaml
+   metadata:
+     redirect_from:
+       - /community/media/YYYYMMDD-titolo/
+```
+
+### Effetti dell'unpublish
+
+- ✅ Accessibile solo tramite link diretto
+- ❌ Non appare nell'archivio Media
+- ❌ Non appare nella ricerca
+- ❌ Non appare negli indici per argomenti
+- ❌ Escluso da sitemap e motori di ricerca (aggiunti meta per robots `noindex,nofollow`)
+- ↪️ Vecchio URL originale reindirizza all'archivio Media `/community/media/`
+
+**Nota:** richiede Pull Request e approvazione come per ogni modifica editoriale!
 
 ---
 
@@ -400,7 +443,7 @@ components:
     subtitle: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un’intelligenza artificiale conversazionale."
     tag:
         label: Notizia
-        addonClasses: mt-3 text-uppercase
+        
 
     kangaroo:
       id: kangarooExample
@@ -542,7 +585,7 @@ components:
     subtitle: " Software a riuso nella PA: linee guida, strumenti e buone pratiche"
     tag:
         label: Community lab
-        addonClasses: mt-3 text-uppercase
+        
 
     kangaroo:
       id: kangarooExample
@@ -696,7 +739,7 @@ components:
     subtitle: "Approfondimento sulle linee guida, gli strumenti pratici e le buone pratiche"
     tag:
       label: Video - Community Lab
-      addonClasses: mt-3 text-uppercase
+      
 
     kangaroo:
       id: kangarooExample
