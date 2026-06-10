@@ -19,6 +19,10 @@ highlightedCards:
     - section: "highlights-home"
       cards:
 
+        - title: "Premiato al Compasso d’Oro ADI 2026 il progetto della Misura 1.4.1 del PNRR per i portali web delle ASL"
+          cta: "Scopri di più"
+          text: "Il modello di sito messo a disposizione da Designers Italia riceve la Menzione d’Onore"
+          
         - title: "Concludi la riprogettazione di un sito con il nuovo kit dedicato alla migrazione"
           cta: "Scopri il kit"
           text: "Nuovi strumenti per completare il passaggio da un vecchio sito a uno nuovo e pubblicarlo in modo corretto e ordinato. "
@@ -27,16 +31,14 @@ highlightedCards:
           cta: "Scopri le novità"
           text: "Nuovi strumenti pratici per definire personalità, tono di voce e comportamento di un'intelligenza artificiale conversazionale"
 
-        - title: "Ora tocca a voi! Le nuove iniziative per la community"
-          cta: "Esplora la sezione"
-          text: "Online la nuova sezione del sito dedicata a coinvolgere cittadinanza, PA e fornitori"
+
         
 
     - section: "notizie-home"
       cards:
-          - title: "Passi avanti per i kit di design e sviluppo di .italia"
-          - title: "Contenuti, Linguaggio, Microtesti e Tono di voce: i fondamenti di .italia si aggiornano"
-          - title: "Scopri le novità del Manuale operativo di design"
+          - title: "Premiato al Compasso d’Oro ADI 2026 il progetto della Misura 1.4.1 del PNRR per i portali web delle ASL"
+          - title: "Concludi la riprogettazione di un sito con il nuovo kit dedicato alla migrazione"
+          - title: "Progettare un assistente virtuale: un atto di design pubblico"          
 
   ################################
   # /community/ 
@@ -45,25 +47,25 @@ highlightedCards:
     sections:
     - section: "notizie"
       cards:
+        - title: "Premiato al Compasso d’Oro ADI 2026 il progetto della Misura 1.4.1 del PNRR per i portali web delle ASL"
         - title: "Concludi la riprogettazione di un sito con il nuovo kit dedicato alla migrazione"
         - title: "Progettare un assistente virtuale: un atto di design pubblico"
-        - title: "Ora tocca a voi! Le nuove iniziative per la community"
+        
 
     - section: "eventi"
       cards:
-        - title: "Community call: progettare bene con il design system .italia"
-        - title: "Milano Digital Week 2025: progettare assistenti virtuali nei servizi pubblici"
-        - title: "Community lab di Developers Italia"
-        - title: "Community call: i musei presentano i loro nuovi siti"
-        
+        - title: "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia"
+        - title: "Design system .italia: nuovi strumenti pubblici per l'accessibilità by default"
+        - title: "Progettare API di qualità per servizi pubblici interoperabili"
+        - title: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
         
 
     - section: "media"
       cards:
+        - title: "Il nuovo Dev Kit Italia e gli ultimi progressi del design system .italia"
+        - title: "Progettare API di qualità per servizi pubblici interoperabili"
+        - title: "Dallo sviluppo al riuso: buone pratiche del software nella PA"
         - title: "Community call: progettare bene con il design system .italia"
-        - title: "Community call: i musei presentano i loro nuovi siti"
-        - title: "Community call: le ASL presentano i loro nuovi siti"
-        - title: "Community lab: design system .italia e la progettazione di servizi pubblici digitali"
 
     - section: "articoli-di-approfondimento"
       cards:
